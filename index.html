@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <title>Appointments</title>
+</head>
+<body>  
+  <div class="container">
+    <h3>Schedule an Appointment</h3>
+    <div>
+      <form id="formOne">
+        <div class="form-group">
+          <label for="firstname">First name</label>
+          <input id="firstname" name='pname[]' class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last name</label>
+          <input id="lastname" name='pname[]' class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="description">Description of the appointment</label>
+          <input id="description" name='pname[]' class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="appointment">Appointment Time</label>
+            <div class='input-group date' id='datetimepicker1'>
+              <input id="datetimepicker1" type='text' class="form-control">
+              <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+            </div>
+        <button type="submit" class="btn">SUBMIT</button>
+      </form>
+    </div>
+    <div id="appointment">
+      <h5>Booking Successful!</h5>
+      <p>
+       Hello, <span class="firstname"></span> <span class="lastname"></span>. 
+       Thank you for submitting the form. We will see you on  <span class="datetimepicker1"></span>
+        for </span> <span class="description"></span>.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
